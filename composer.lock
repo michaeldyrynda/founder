@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab5fcf578aa28463398d0d6ffcb7f6e3",
+    "content-hash": "803006614466eed15a38fa47e369eb9d",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -159,6 +159,65 @@
                 "parser"
             ],
             "time": "2014-09-09T13:34:57+00:00"
+        },
+        {
+            "name": "dyrynda/laravel-make-user",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/michaeldyrynda/laravel-make-user.git",
+                "reference": "424ca7bc4391aff36b24a3da9240acb2ad79657f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/michaeldyrynda/laravel-make-user/zipball/424ca7bc4391aff36b24a3da9240acb2ad79657f",
+                "reference": "424ca7bc4391aff36b24a3da9240acb2ad79657f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/auth": "5.5.*",
+                "illuminate/console": "5.5.*",
+                "illuminate/database": "5.5.*",
+                "illuminate/notifications": "5.5.*",
+                "illuminate/support": "5.5.*",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "orchestra/database": "3.5.*",
+                "orchestra/testbench": "3.5.*",
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Dyrynda\\Artisan\\MakeUserServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dyrynda\\Artisan\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dyrynda",
+                    "email": "michael@dyrynda.com.au",
+                    "homepage": "https://dyrynda.com.au"
+                }
+            ],
+            "description": "An Artisan console command to create users in your Laravel application.",
+            "keywords": [
+                "artisan",
+                "console",
+                "laravel"
+            ],
+            "time": "2017-10-04T00:27:21+00:00"
         },
         {
             "name": "egulias/email-validator",
