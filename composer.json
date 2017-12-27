@@ -12,6 +12,9 @@
         "laravel/tinker": "~1.0",
         "sentry/sentry-laravel": "^0.8.0"
     },
+    "suggest": {
+        "dyrynda/laravel-model-uuid": "For applications that need globally-unique model identifiers"
+    },
     "require-dev": {
         "filp/whoops": "~2.0",
         "fzaninotto/faker": "~1.4",
