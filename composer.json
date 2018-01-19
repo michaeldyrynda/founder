@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "dyrynda/founder",
+    "description": "Founder is a starter project for your Laravel applications.",
+    "keywords": ["laravel", "starter"],
     "license": "MIT",
     "type": "project",
     "require": {
