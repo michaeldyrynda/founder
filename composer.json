@@ -10,6 +10,7 @@
         "fideloper/proxy": "~3.3",
         "laracasts/flash": "^3.0",
         "laravel/framework": "5.5.*",
+        "laravel/horizon": "^1.1",
         "laravel/tinker": "~1.0",
         "sentry/sentry-laravel": "^0.8.0"
     },
