@@ -15,7 +15,8 @@
         "sentry/sentry-laravel": "^0.8.0"
     },
     "suggest": {
-        "dyrynda/laravel-model-uuid": "For applications that need globally-unique model identifiers"
+        "dyrynda/laravel-model-uuid": "For applications that need globally-unique model identifiers",
+        "myclabs/php-enum": "If enumerable values are required"
     },
     "require-dev": {
         "filp/whoops": "~2.0",
