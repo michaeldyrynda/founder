@@ -8,6 +8,7 @@
         "php": ">=7.0.0",
         "dyrynda/laravel-make-user": "^2.0",
         "fideloper/proxy": "~3.3",
+        "hemp/presenter": "^1.0",
         "laracasts/flash": "^3.0",
         "laravel/framework": "5.5.*",
         "laravel/horizon": "^1.1",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "39c2f2d0285b40f3cc9d5c840491d2dc",
+    "content-hash": "9056a2c971a9dc6c7bdd1468ec779c46",
     "packages": [
         {
             "name": "cakephp/chronos",
@@ -434,6 +434,50 @@
                 "trusted proxy"
             ],
             "time": "2017-06-15T17:19:42+00:00"
+        },
+        {
+            "name": "hemp/presenter",
+            "version": "v1.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/davidhemphill/presenter.git",
+                "reference": "c2c139cfbe7a503d18adcfaaf29256f76186875b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/davidhemphill/presenter/zipball/c2c139cfbe7a503d18adcfaaf29256f76186875b",
+                "reference": "c2c139cfbe7a503d18adcfaaf29256f76186875b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.1|~5.2|~5.3|~5.4|~5.5"
+            },
+            "require-dev": {
+                "graham-campbell/testbench": "^3.2",
+                "graham-campbell/testbench-core": "^1.1",
+                "illuminate/database": "~5.1|~5.2|~5.3|~5.4|~5.5",
+                "mockery/mockery": "^1.0@dev",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "Hemp\\Presenter\\": "src"
+                },
+                "files": [
+                    "helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Easy Model Presenters in Laravel",
+            "keywords": [
+                "framework",
+                "laravel"
+            ],
+            "time": "2017-10-08T18:29:38+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
