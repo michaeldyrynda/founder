@@ -3,6 +3,8 @@
 return [
     'dsn' => env('SENTRY_DSN'),
 
+    'public_dsn' => env('SENTRY_PUBLIC_DSN'),
+
     // capture release as git sha
     'release' => file_exists($path = base_path('GITVERSION')) ? trim(file_get_contents($path)) : null,
 
