@@ -56,6 +56,7 @@
         "check-security": [
             "vendor/bin/security-checker security:check"
         ],
+        "test": "vendor/bin/phpunit --colors=always",
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
