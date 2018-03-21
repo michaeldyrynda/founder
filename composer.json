@@ -50,12 +50,8 @@
         }
     },
     "scripts": {
-        "cs-fix": [
-            "vendor/bin/php-cs-fixer fix"
-        ],
-        "check-security": [
-            "vendor/bin/security-checker security:check"
-        ],
+        "cs-fix": "vendor/bin/php-cs-fixer fix",
+        "check-security": "vendor/bin/security-checker security:check",
         "test": "vendor/bin/phpunit --colors=always",
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
