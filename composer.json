@@ -9,13 +9,13 @@
     "type": "project",
     "require": {
         "php": ">=7.1.3",
-        "dyrynda/laravel-make-user": "~3.0",
+        "dyrynda/laravel-make-user": "^4.0",
         "fideloper/proxy": "~4.0",
         "hemp/presenter": "^1.0",
         "laracasts/flash": "^3.0",
         "laravel/framework": "5.7.*",
-        "laravel/horizon": "^1.1",
-        "laravel/tinker": "~1.0",
+        "laravel/horizon": "^1.0",
+        "laravel/tinker": "^1.0",
         "sentry/sentry-laravel": "^0.8.0"
     },
     "suggest": {
