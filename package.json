@@ -17,6 +17,7 @@
         "laravel-mix": "^1.0",
         "laravel-mix-purgecss": "^1.0.3",
         "lodash": "^4.17.4",
+        "prettier": "1.16.4",
         "vue": "^2.5.7"
     }
 }
