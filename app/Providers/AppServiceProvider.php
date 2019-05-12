@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Laravel\Horizon\Horizon;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Telescope\Telescope;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -28,6 +29,8 @@ class AppServiceProvider extends ServiceProvider
     {
         if ($this->app->isLocal()) {
             $this->app->register(TelescopeServiceProvider::class);
+
+            Telescope::ignoreMigrations();
         }        
     }
 }
