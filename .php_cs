@@ -25,5 +25,6 @@ return PhpCsFixer\Config::create()
         'no_unused_imports' => true,                        // Unused use statements must be removed.
         'trim_array_spaces' => true,                        // Arrays should be formatted like function/method arguments, without leading or trailing single line space.
         'no_trailing_comma_in_singleline_array' => true,    // PHP single-line arrays should not have a trailing comma.
+        'list_syntax' => ['syntax' => 'short'],             // Use short list syntax
     ])
     ->setFinder($finder);
