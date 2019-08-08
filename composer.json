@@ -31,7 +31,7 @@
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^3.0",
         "phpunit/phpunit": "^7.5",
-        "sensiolabs/security-checker": "^5.0"
+        "sensiolabs/security-checker": "^6.0"
     },
     "autoload": {
         "classmap": [
