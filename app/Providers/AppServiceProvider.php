@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use Laravel\Horizon\Horizon;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Telescope\Telescope;
 
@@ -15,9 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Horizon::auth(function ($request) {
-            return $request->user() ?: false;
-        });
+        //
     }
 
     /**
@@ -31,6 +28,6 @@ class AppServiceProvider extends ServiceProvider
             $this->app->register(TelescopeServiceProvider::class);
 
             Telescope::ignoreMigrations();
-        }        
+        }
     }
 }
