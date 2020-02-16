@@ -23,6 +23,7 @@
         "myclabs/php-enum": "If enumerable values are required"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.2",
         "beyondcode/laravel-dump-server": "^1.0",
         "facade/ignition": "^1.4",
         "friendsofphp/php-cs-fixer": "^2.0",
