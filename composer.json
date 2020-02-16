@@ -32,6 +32,7 @@
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^3.0",
         "phpunit/phpunit": "^8.0",
+        "sempro/phpunit-pretty-print": "^1.2",
         "sensiolabs/security-checker": "^6.0"
     },
     "autoload": {
