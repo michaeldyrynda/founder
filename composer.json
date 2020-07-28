@@ -16,7 +16,8 @@
         "laravel/framework": "^6.2",
         "laravel/horizon": "^3.0",
         "laravel/tinker": "^2.0",
-        "sentry/sentry-laravel": "^1.0"
+        "sentry/sentry-laravel": "^1.0",
+        "laravel/ui": "^2.0"
     },
     "suggest": {
         "dyrynda/laravel-model-uuid": "For applications that need globally-unique model identifiers",
