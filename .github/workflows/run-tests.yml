@@ -39,5 +39,12 @@ jobs:
         run: |
           composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
           composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction --no-suggest
+          npm install
+      - name: Prepare application
+        run: |
+          npm run production
+          php artisan route:cache
+          php artisan config:cache
+          php artisan key:generate
       - name: Execute tests
         run: vendor/bin/phpunit
