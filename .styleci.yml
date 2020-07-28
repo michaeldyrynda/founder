@@ -1,0 +1,10 @@
+preset: laravel
+
+disabled:
+  - post_increment
+  - no_useless_return
+  - short_list_syntax
+
+finder:
+  exclude:
+    - resources
