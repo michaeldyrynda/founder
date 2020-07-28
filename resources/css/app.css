@@ -1,0 +1,31 @@
+@tailwind base;
+
+/**
+ * Remove the default box-shadow for invalid elements to prevent
+ * inputs in Livewire components showing with a
+ * red border by default in Firefox.
+ *
+ * See: https://github.com/laravel-frontend-presets/tall/issues/7
+ */
+input:invalid,
+textarea:invalid,
+select:invalid {
+  box-shadow: none;
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+html {
+  font-feature-settings: 'tnum' 1, 'case' 1, 'zero' 1;
+}
+
+html,
+body {
+  font-family: theme('fontFamily.sans');
+}
+
+[x-cloak] {
+  display: none;
+}
