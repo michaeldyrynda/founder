@@ -32,8 +32,10 @@
     "mockery/mockery": "^1.3.1",
     "nunomaduro/collision": "^4.1",
     "phpunit/phpunit": "^9.0",
+    "psalm/plugin-laravel": "^1.3",
     "rector/rector-prefixed": "^0.7.54",
-    "sensiolabs/security-checker": "^6.0"
+    "sensiolabs/security-checker": "^6.0",
+    "vimeo/psalm": "^3.12"
   },
   "suggest": {
     "dyrynda/laravel-model-uuid": "For applications that need globally-unique model identifiers",
@@ -79,6 +81,7 @@
     "check-security": "vendor/bin/security-checker security:check",
     "cs-fix": "vendor/bin/php-cs-fixer fix",
     "normalise": "@composer normalize --indent-style space --indent-size 2 --ansi",
+    "psalm": "vendor/bin/psalm",
     "rector": "vendor/bin/rector process app --ansi",
     "test": "vendor/bin/phpunit --colors=always"
   }
