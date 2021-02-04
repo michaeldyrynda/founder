@@ -19,7 +19,7 @@
     "laravel/horizon": "^4.0",
     "laravel/tinker": "^2.0",
     "laravel/ui": "^2.0",
-    "sentry/sentry-laravel": "^1.7"
+    "sentry/sentry-laravel": "^2.3"
   },
   "require-dev": {
     "barryvdh/laravel-debugbar": "^3.2",
