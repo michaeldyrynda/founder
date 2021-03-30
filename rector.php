@@ -2,30 +2,37 @@
 
 declare(strict_types=1);
 
-use Rector\Laravel\Rector\Class_\InlineValidationRulesToArrayDefinitionRector;
-use Rector\Laravel\Rector\StaticCall\Redirect301ToPermanentRedirectRector;
-use Rector\Php74\Rector\Assign\NullCoalescingOperatorRector;
-use Rector\Php74\Rector\Closure\ClosureToArrowFunctionRector;
-use Rector\Php74\Rector\FuncCall\ArraySpreadInsteadOfArrayMergeRector;
-use Rector\Php74\Rector\Property\TypedPropertyRector;
+use Rector\Core\Configuration\Option;
+use Rector\Core\ValueObject\PhpVersion;
+use Rector\PostRector\Rector\NameImportingPostRector;
+use Rector\Set\ValueObject\SetList;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 
 return static function (ContainerConfigurator $containerConfigurator): void {
     $parameters = $containerConfigurator->parameters();
 
-    $parameters->set('php_version_features', '7.4');
+    $parameters->set(Option::PATHS, [
+        __DIR__.'/app',
+        __DIR__.'/tests',
+    ]);
 
-    $services = $containerConfigurator->services();
+    $parameters->set(Option::SKIP, [
+        __DIR__.'/config',
 
-    $services->set(ClosureToArrowFunctionRector::class);
+        NameImportingPostRector::class => [
+            __DIR__.'/app/Http/Kernel.php',
+        ],
 
-    $services->set(TypedPropertyRector::class);
+    ]);
 
-    $services->set(InlineValidationRulesToArrayDefinitionRector::class);
+    $parameters->set(Option::PHP_VERSION_FEATURES, PhpVersion::PHP_80);
 
-    $services->set(Redirect301ToPermanentRedirectRector::class);
+    $parameters->set(Option::AUTO_IMPORT_NAMES, true);
 
-    $services->set(ArraySpreadInsteadOfArrayMergeRector::class);
+    $parameters->set(Option::ENABLE_CACHE, true);
 
-    $services->set(NullCoalescingOperatorRector::class);
+    $parameters->set(Option::SETS, [
+        SetList::PHP_80,
+        SetList::PHPUNIT_91,
+    ]);
 };
