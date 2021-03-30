@@ -190,6 +190,7 @@ return [
     */
 
     'aliases' => [
+        'Date' => Illuminate\Support\Facades\Date::class,
 
         'App'          => Illuminate\Support\Facades\App::class,
         'Arr'          => Illuminate\Support\Arr::class,

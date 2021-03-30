@@ -1,25 +1,11 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
-
 module.exports = {
+  purge: ['./app/**/*.php', './resources/**/*.{js,vue,css,blade.php}'],
+  darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
-      },
-    },
+    extend: {},
   },
-  variants: {},
-  purge: {
-    content: [
-      "./app/**/*.php",
-      "./resources/**/*.html",
-      "./resources/**/*.js",
-      "./resources/**/*.php",
-    ],
-    options: {
-      defaultExtractor: (content) => content.match(/[\w-/.:]+(?<!:)/g) || [],
-      whitelistPatterns: [/-active$/, /-enter$/, /-leave-to$/, /show$/],
-    },
+  variants: {
+    extend: {},
   },
-  plugins: ["@tailwindcss/typography", "@tailwindcss/ui"],
-};
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+}
