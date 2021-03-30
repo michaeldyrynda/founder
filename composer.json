@@ -24,8 +24,10 @@
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.5",
         "beyondcode/laravel-dump-server": "^1.7",
+        "brianium/paratest": "^6.2",
         "ergebnis/composer-normalize": "^2.6",
         "facade/ignition": "^2.5",
+        "fakerphp/faker": "^1.9.1",
         "friendsofphp/php-cs-fixer": "^2.18",
         "laravel/telescope": "^4.4",
         "mockery/mockery": "^1.4.2",
@@ -35,8 +37,7 @@
         "psalm/plugin-laravel": "^1.4",
         "rector/rector-prefixed": "^0.9.18",
         "sensiolabs/security-checker": "^6.0",
-        "vimeo/psalm": "^4.4",
-        "fakerphp/faker": "^1.9.1"
+        "vimeo/psalm": "^4.4"
     },
     "suggest": {
         "dyrynda/laravel-model-uuid": "For applications that need globally-unique model identifiers",
