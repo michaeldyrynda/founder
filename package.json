@@ -1,31 +1,49 @@
 {
-    "private": true,
-    "scripts": {
-        "dev": "npm run development",
-        "development": "mix",
-        "watch": "mix watch",
-        "watch-poll": "mix watch -- --watch-options-poll=1000",
-        "hot": "mix watch --hot",
-        "prod": "npm run production",
-        "production": "mix --production"
-    },
-    "devDependencies": {
-        "@tailwindcss/typography": "^0.2.0",
-        "@tailwindcss/ui": "^0.4.0",
-        "axios": "^0.19",
-        "eslint": "^6.0.1",
-        "eslint-config-postcss": "^2.0.2",
-        "eslint-config-prettier": "^6.0.0",
-        "eslint-plugin-prettier": "^3.0.1",
-        "laravel-mix": "^6.0.12",
-        "lodash": "^4.17.19",
-        "prettier": "^2.0.5",
-        "resolve-url-loader": "^3.1.0",
-        "tailwindcss": "^1.5.2",
-        "vue-template-compiler": "^2.6.11",
-        "postcss": "^8.2.8"
-    },
-    "browserslist": [
-        "> 1%"
-    ]
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.3.2",
+    "@tailwindcss/jit": "^0.1.17",
+    "@tailwindcss/typography": "^0.4.0",
+    "autoprefixer": "^10.2.5",
+    "axios": "^0.21",
+    "laravel-mix": "^6.0.12",
+    "lodash": "^4.17.19",
+    "postcss": "^8.2.8",
+    "tailwindcss": "^2.0.4"
+  },
+  "browserslist": [
+    "> 1%"
+  ],
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 120,
+    "tabWidth": 2,
+    "useTabs": false,
+    "trailingComma": "es5",
+    "bracketSpacing": true,
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ],
+      "quotes": [
+        "warn",
+        "single"
+      ],
+      "comma-dangle": [
+        "warn",
+        "always-multiline"
+      ]
+    }
+  }
 }
