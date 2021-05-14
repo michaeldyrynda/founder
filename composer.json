@@ -37,7 +37,8 @@
         "psalm/plugin-laravel": "^1.4",
         "rector/rector-prefixed": "^0.10.3",
         "sensiolabs/security-checker": "^6.0",
-        "vimeo/psalm": "^4.4"
+        "vimeo/psalm": "^4.4",
+        "wnx/laravel-stats": "^2.5"
     },
     "suggest": {
         "dyrynda/laravel-model-uuid": "For applications that need globally-unique model identifiers",
