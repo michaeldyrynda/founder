@@ -4,8 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTelescopeEntriesTable extends Migration
-{
+return new class extends Migration {
     protected $schema;
 
     public function __construct()
@@ -54,4 +53,4 @@ class CreateTelescopeEntriesTable extends Migration
             $table->string('tag');
         });
     }
-}
+};
