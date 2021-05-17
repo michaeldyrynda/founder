@@ -1,89 +1,84 @@
 {
-    "name": "dyrynda/founder",
-    "type": "project",
-    "description": "Founder is a starter project for your Laravel applications.",
-    "keywords": [
-        "laravel",
-        "starter"
-    ],
-    "license": "MIT",
-    "require": {
-        "php": "^8.0",
-        "dyrynda/laravel-make-user": "^7.0",
-        "fideloper/proxy": "^4.4",
-        "fruitcake/laravel-cors": "^2.0",
-        "guzzlehttp/guzzle": "^7.2",
-        "hemp/presenter": "^2.0",
-        "laracasts/flash": "^3.2",
-        "laravel/framework": "^8.34",
-        "laravel/horizon": "^5.6",
-        "laravel/tinker": "^2.5",
-        "laravel/ui": "^3.2",
-        "sentry/sentry-laravel": "^2.4"
-    },
-    "require-dev": {
-        "barryvdh/laravel-debugbar": "^3.5",
-        "beyondcode/laravel-dump-server": "^1.7",
-        "brianium/paratest": "^6.2",
-        "ergebnis/composer-normalize": "^2.6",
-        "facade/ignition": "^2.5",
-        "fakerphp/faker": "^1.9.1",
-        "friendsofphp/php-cs-fixer": "^2.18",
-        "laravel/telescope": "^4.4",
-        "mockery/mockery": "^1.4.2",
-        "nunomaduro/collision": "^5.3",
-        "orchestra/testbench": "^6.15",
-        "phpunit/phpunit": "^9.3.3",
-        "psalm/plugin-laravel": "^1.4",
-        "rector/rector-prefixed": "^0.10.3",
-        "sensiolabs/security-checker": "^6.0",
-        "vimeo/psalm": "^4.4",
-        "wnx/laravel-stats": "^2.5"
-    },
-    "suggest": {
-        "dyrynda/laravel-model-uuid": "For applications that need globally-unique model identifiers",
-        "livewire/livewire": "A front-end framework for Laravel.",
-        "spatie/enum": "If enumerable values are required",
-        "thenpingme/laravel": "Scheduled task monitoring built specifically for Laravel applications thenping.me"
-    },
-    "config": {
-        "optimize-autoloader": true,
-        "preferred-install": "dist",
-        "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "dont-discover": []
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "App\\": "app/",
-            "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        }
-    },
-    "scripts": {
-        "post-autoload-dump": [
-            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover"
-        ],
-        "post-root-package-install": [
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-        ],
-        "post-create-project-cmd": [
-            "@php artisan key:generate"
-        ],
-        "check-security": "vendor/bin/security-checker security:check",
-        "cs-fix": "vendor/bin/php-cs-fixer fix",
-        "normalise": "@composer normalize --indent-style space --indent-size 2 --ansi",
-        "psalm": "vendor/bin/psalm",
-        "rector": "vendor/bin/rector process app --ansi",
-        "test": "vendor/bin/phpunit --colors=always"
+  "name": "dyrynda/founder",
+  "type": "project",
+  "description": "Founder is a starter project for your Laravel applications.",
+  "keywords": ["laravel", "starter"],
+  "license": "MIT",
+  "require": {
+    "php": "^8.0",
+    "enlightn/enlightn": "^1.22",
+    "fideloper/proxy": "^4.4",
+    "fruitcake/laravel-cors": "^2.0",
+    "guzzlehttp/guzzle": "^7.2",
+    "honeybadger-io/honeybadger-laravel": "^3.10",
+    "laravel/framework": "^8.41",
+    "laravel/horizon": "^5.6",
+    "laravel/tinker": "^2.5"
+  },
+  "require-dev": {
+    "barryvdh/laravel-debugbar": "^3.5",
+    "beyondcode/laravel-dump-server": "^1.7",
+    "brianium/paratest": "^6.2",
+    "ergebnis/composer-normalize": "^2.6",
+    "facade/ignition": "^2.5",
+    "fakerphp/faker": "^1.9.1",
+    "friendsofphp/php-cs-fixer": "^2.0",
+    "laravel/sail": "^1.0.1",
+    "laravel/telescope": "^4.4",
+    "mockery/mockery": "^1.4.2",
+    "nunomaduro/collision": "^5.3",
+    "orchestra/testbench": "^6.15",
+    "phpunit/phpunit": "^9.5",
+    "psalm/plugin-laravel": "^1.4",
+    "spatie/laravel-ray": "^1.17",
+    "vimeo/psalm": "^4.4",
+    "wnx/laravel-stats": "^2.5"
+  },
+  "suggest": {
+    "dyrynda/laravel-make-user": "Quickly create application users with an Artisan command",
+    "dyrynda/laravel-efficient-uuid": "Efficiently store UUID values in the database",
+    "dyrynda/laravel-model-uuid": "For applications that need globally-unique model identifiers",
+    "hemp/presenter": "Useful for decorating models when they become bloated with accessor methods",
+    "laracasts/flash": "For displaying flash notifications within applications",
+    "livewire/livewire": "A front-end framework for Laravel",
+    "spatie/data-transfer-object": "Type-safe DTOs when working with external application data",
+    "spatie/enum": "If enumerable values are required",
+    "thenpingme/laravel": "Scheduled task monitoring built specifically for Laravel applications thenping.me"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "dont-discover": []
     }
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Database\\Factories\\": "database/factories/",
+      "Database\\Seeders\\": "database/seeders/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+      "@php artisan package:discover"
+    ],
+    "post-root-package-install": ["@php -r \"file_exists('.env') || copy('.env.example', '.env');\""],
+    "post-create-project-cmd": ["@php artisan key:generate"],
+    "check-security": "@php artisan enlightn",
+    "cs-fix": "vendor/bin/php-cs-fixer fix",
+    "normalise": "@composer normalize --indent-style space --indent-size 2 --ansi",
+    "psalm": "vendor/bin/psalm",
+    "rector": "vendor/bin/rector process app --ansi",
+    "test": "vendor/bin/phpunit --colors=always"
+  }
 }
