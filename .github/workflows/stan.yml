@@ -1,14 +1,15 @@
-name: Psalm
+name: Static Analysis
 
 on:
     push:
         paths:
             - '**.php'
-            - 'psalm.xml'
+            - 'phpstan.neon'
+            - 'phpstan.neon.dist'
 
 jobs:
-    psalm:
-        name: psalm
+    stan:
+        name: stan
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
@@ -30,4 +31,4 @@ jobs:
               run: composer install -n --prefer-dist
 
             - name: Run psalm
-              run: ./vendor/bin/psalm -c psalm.xml
+              run: composer run stan
