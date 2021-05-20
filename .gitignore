@@ -3,13 +3,13 @@
 /public/storage
 /storage/*.key
 /vendor
-/.idea
-/.vagrant
 /storage/debugbar
+.env
+.env.backup
+.phpunit.result.cache
 .php-cs-fixer.cache
+docker-compose.override.yml
 Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-.env
-GITVERSION
