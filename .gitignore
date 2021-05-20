@@ -6,6 +6,7 @@
 /.idea
 /.vagrant
 /storage/debugbar
+.php-cs-fixer.cache
 Homestead.json
 Homestead.yaml
 npm-debug.log
