@@ -2,7 +2,10 @@
   "name": "dyrynda/founder",
   "type": "project",
   "description": "Founder is a starter project for your Laravel applications.",
-  "keywords": ["laravel", "starter"],
+  "keywords": [
+    "laravel",
+    "starter"
+  ],
   "license": "MIT",
   "require": {
     "php": "^8.0",
@@ -35,8 +38,8 @@
     "wnx/laravel-stats": "^2.5"
   },
   "suggest": {
-    "dyrynda/laravel-make-user": "Quickly create application users with an Artisan command",
     "dyrynda/laravel-efficient-uuid": "Efficiently store UUID values in the database",
+    "dyrynda/laravel-make-user": "Quickly create application users with an Artisan command",
     "dyrynda/laravel-model-uuid": "For applications that need globally-unique model identifiers",
     "hemp/presenter": "Useful for decorating models when they become bloated with accessor methods",
     "laracasts/flash": "For displaying flash notifications within applications",
@@ -72,13 +75,17 @@
       "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
       "@php artisan package:discover"
     ],
-    "post-root-package-install": ["@php -r \"file_exists('.env') || copy('.env.example', '.env');\""],
-    "post-create-project-cmd": ["@php artisan key:generate"],
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+      "@php artisan key:generate"
+    ],
     "check-security": "@php artisan enlightn",
     "cs-fix": "vendor/bin/php-cs-fixer fix",
     "normalise": "@composer normalize --indent-style space --indent-size 2 --ansi",
-    "stan": "vendor/bin/phpstan analyse",
     "rector": "vendor/bin/rector process app --ansi",
+    "stan": "vendor/bin/phpstan analyse",
     "test": "vendor/bin/phpunit --colors=always"
   }
 }
