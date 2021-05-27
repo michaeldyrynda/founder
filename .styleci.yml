@@ -4,6 +4,7 @@ disabled:
   - post_increment
   - no_useless_return
   - short_list_syntax
+  - laravel_braces
 
 finder:
   exclude:
