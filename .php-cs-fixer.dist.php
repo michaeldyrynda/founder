@@ -8,7 +8,7 @@ $finder = PhpCsFixer\Finder::create()
         'vendor',
     ])
     ->name('*.php')
-    ->name('_ide_helper')
+    ->name('_ide_helper*')
     ->notName('*.blade.php')
     ->notName('index.php')
     ->notName('server.php')
@@ -20,12 +20,11 @@ return (new PhpCsFixer\Config)
     ->setUsingCache(true)
     ->setRules([
         'binary_operator_spaces' => [
-            'operators' => ['=>' => null]
+            'operators' => ['=>' => null],
         ],
         'blank_line_after_namespace' => true,
         'blank_line_after_opening_tag' => true,
         'blank_line_before_statement' => true,
-        'braces' => true,
         'cast_spaces' => true,
         'class_definition' => true,
         'concat_space' => true,
@@ -36,7 +35,7 @@ return (new PhpCsFixer\Config)
         'function_declaration' => true,
         'function_typehint_space' => true,
         'single_line_comment_style' => [
-            'comment_types' => ['hash']
+            'comment_types' => ['hash'],
         ],
         'heredoc_to_nowdoc' => true,
         'include' => true,
@@ -57,7 +56,7 @@ return (new PhpCsFixer\Config)
                 'throw',
                 'use',
                 'use_trait',
-            ]
+            ],
         ],
         'array_syntax' => ['syntax' => 'short'],
         'fully_qualified_strict_types' => true, // added
