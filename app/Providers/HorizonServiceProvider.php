@@ -34,7 +34,7 @@ class HorizonServiceProvider extends HorizonApplicationServiceProvider
     }
 
     /**
-     * Fetch the token used for Observer.
+     * Fetch the secret used for Observer.
      *
      * @see https://observer.dev
      *
