@@ -2,10 +2,11 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Schema\Builder;
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration {
-    protected $schema;
+    protected Builder $schema;
 
     public function __construct()
     {
@@ -17,7 +18,7 @@ return new class extends Migration {
         return config('telescope.storage.database.connection');
     }
 
-    public function up()
+    public function up(): void
     {
         $this->schema->create('telescope_entries', function (Blueprint $table) {
             $table->bigIncrements('sequence');

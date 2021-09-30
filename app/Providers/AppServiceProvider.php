@@ -10,7 +10,7 @@ use Laravel\Telescope\Telescope;
 
 class AppServiceProvider extends ServiceProvider
 {
-    public function register()
+    public function register(): void
     {
         Model::unguard();
 

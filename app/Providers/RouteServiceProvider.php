@@ -12,7 +12,7 @@ class RouteServiceProvider extends ServiceProvider
 {
     public const HOME = '/home';
 
-    public function boot()
+    public function boot(): void
     {
         $this->configureRateLimiting();
 

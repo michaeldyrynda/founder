@@ -9,7 +9,7 @@ use Laravel\Horizon\HorizonApplicationServiceProvider;
 
 class HorizonServiceProvider extends HorizonApplicationServiceProvider
 {
-    public function boot()
+    public function boot(): void
     {
         parent::boot();
 
@@ -20,7 +20,7 @@ class HorizonServiceProvider extends HorizonApplicationServiceProvider
         // Horizon::night();
     }
 
-    protected function gate()
+    protected function gate(): void
     {
         Gate::define('viewHorizon', function ($user = null) {
             if (blank($user) && ! blank($token = $this->getObserverSecret())) {
@@ -37,8 +37,6 @@ class HorizonServiceProvider extends HorizonApplicationServiceProvider
      * Fetch the secret used for Observer.
      *
      * @see https://observer.dev
-     *
-     * @return string|null
      */
     protected function getObserverSecret(): ?string
     {

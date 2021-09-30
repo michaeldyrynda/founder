@@ -9,7 +9,7 @@ use Laravel\Telescope\TelescopeApplicationServiceProvider;
 
 class TelescopeServiceProvider extends TelescopeApplicationServiceProvider
 {
-    public function register()
+    public function register(): void
     {
         $this->hideSensitiveRequestDetails();
 
@@ -26,7 +26,7 @@ class TelescopeServiceProvider extends TelescopeApplicationServiceProvider
         });
     }
 
-    protected function hideSensitiveRequestDetails()
+    protected function hideSensitiveRequestDetails(): void
     {
         if ($this->app->environment('local')) {
             return;
@@ -41,7 +41,7 @@ class TelescopeServiceProvider extends TelescopeApplicationServiceProvider
         ]);
     }
 
-    protected function gate()
+    protected function gate(): void
     {
         Gate::define('viewTelescope', function ($user) {
             return in_array($user->email, [
