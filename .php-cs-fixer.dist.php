@@ -8,7 +8,7 @@ $finder = PhpCsFixer\Finder::create()
         'vendor',
     ])
     ->name('*.php')
-    ->name('_ide_helper*')
+    ->notName('_ide_helper*')
     ->notName('*.blade.php')
     ->notName('index.php')
     ->notName('server.php')
