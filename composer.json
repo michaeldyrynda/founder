@@ -95,6 +95,6 @@
     "normalise": "@composer normalize --indent-style space --indent-size 2 --ansi",
     "rector": "vendor/bin/rector process app --ansi",
     "stan": "vendor/bin/phpstan analyse",
-    "test": "vendor/bin/phpunit --colors=always"
+    "test": "vendor/bin/pest"
   }
 }
