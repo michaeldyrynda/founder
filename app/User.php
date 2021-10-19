@@ -8,10 +8,7 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    use HasFactory;
-    use Notifiable;
-
-    protected $guarded = [];
+    use HasFactory, Notifiable;
 
     protected $hidden = [
         'password', 'remember_token',
