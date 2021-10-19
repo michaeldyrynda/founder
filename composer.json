@@ -88,6 +88,10 @@
     ],
     "check-security": "@php artisan enlightn",
     "cs-fix": "vendor/bin/php-cs-fixer fix",
+    "helpers": [
+      "@php artisan ide-helper:generate",
+      "@php artisan ide-helper:models -N"
+    ],
     "normalise": "@composer normalize --indent-style space --indent-size 2 --ansi",
     "rector": "vendor/bin/rector process app --ansi",
     "stan": "vendor/bin/phpstan analyse",
