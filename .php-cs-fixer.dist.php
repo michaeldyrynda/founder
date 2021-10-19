@@ -96,6 +96,9 @@ return (new PhpCsFixer\Config)
         'ordered_imports' => ['sort_algorithm' => 'alpha'],
         'phpdoc_indent' => true,
         'phpdoc_inline_tag_normalizer' => true,
+        'phpdoc_line_span' => [
+            'property' => 'single',
+        ],
         'phpdoc_no_access' => true,
         'phpdoc_no_package' => true,
         'phpdoc_no_useless_inheritdoc' => true,
@@ -103,7 +106,6 @@ return (new PhpCsFixer\Config)
         'phpdoc_single_line_var_spacing' => true,
         'phpdoc_summary' => true,
         'phpdoc_tag_type' => true,
-        'phpdoc_to_comment' => true,
         'phpdoc_trim' => true,
         'phpdoc_types' => true,
         'phpdoc_var_without_name' => true,
