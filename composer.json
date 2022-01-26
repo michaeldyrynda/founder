@@ -13,8 +13,6 @@
     "guzzlehttp/guzzle": "^7.2",
     "honeybadger-io/honeybadger-laravel": "^3.13",
     "laravel/framework": "^9.0",
-    "laravel/horizon": "^5.8",
-    "laravel/sanctum": "^2.14",
     "laravel/tinker": "^2.7"
   },
   "require-dev": {
@@ -26,11 +24,9 @@
     "fakerphp/faker": "^1.9.1",
     "friendsofphp/php-cs-fixer": "^3.5",
     "laravel/sail": "^1.13",
-    "laravel/telescope": "^4.7",
     "mockery/mockery": "^1.4.4",
     "nunomaduro/collision": "^6.0",
     "nunomaduro/larastan": "^1.0",
-    "orchestra/testbench": "^7.9",
     "pestphp/pest": "^1.21",
     "pestphp/pest-plugin-laravel": "^1.2",
     "pestphp/pest-plugin-parallel": "^1.0.0",
