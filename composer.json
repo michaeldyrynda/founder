@@ -1,103 +1,106 @@
 {
-    "name": "dyrynda/founder",
-    "type": "project",
-    "description": "Founder is a starter project for your Laravel applications.",
-    "keywords": [
-        "laravel",
-        "starter"
-    ],
-    "license": "MIT",
-    "require": {
-        "php": "^8.0",
-        "enlightn/enlightn": "^1.22",
-        "fruitcake/laravel-cors": "^2.0.5",
-        "guzzlehttp/guzzle": "^7.2",
-        "honeybadger-io/honeybadger-laravel": "^3.13",
-        "laravel/framework": "^9.0",
-        "laravel/horizon": "^5.8",
-        "laravel/tinker": "^2.7",
-        "laravel/sanctum": "^2.14"
-    },
-    "require-dev": {
-        "barryvdh/laravel-debugbar": "dev-master",
-        "barryvdh/laravel-ide-helper": "^2.12",
-        "beyondcode/laravel-dump-server": "^1.7",
-        "brianium/paratest": "^6.4",
-        "composer/composer": "^2.2",
-        "ergebnis/composer-normalize": "^2.6",
-        "fakerphp/faker": "^1.9.1",
-        "friendsofphp/php-cs-fixer": "^3.5",
-        "laravel/sail": "^1.13",
-        "laravel/telescope": "^4.7",
-        "mockery/mockery": "^1.4.4",
-        "nunomaduro/collision": "^6.0",
-        "nunomaduro/larastan": "^1.0",
-        "orchestra/testbench": "dev-remove-nice-to-have-deps",
-        "pestphp/pest": "^1.21",
-        "pestphp/pest-plugin-laravel": "^1.2",
-        "pestphp/pest-plugin-parallel": "^1.0.0",
-        "phpunit/phpunit": "^9.5.10",
-        "rector/rector": "^0.12",
-        "spatie/laravel-ray": "^1.29",
-        "wnx/laravel-stats": "^2.8",
-        "spatie/laravel-ignition": "^1.0"
-    },
-    "suggest": {
-        "dyrynda/laravel-efficient-uuid": "Efficiently store UUID values in the database",
-        "dyrynda/laravel-make-user": "Quickly create application users with an Artisan command",
-        "dyrynda/laravel-model-uuid": "For applications that need globally-unique model identifiers",
-        "hemp/presenter": "Useful for decorating models when they become bloated with accessor methods",
-        "laracasts/flash": "For displaying flash notifications within applications",
-        "livewire/livewire": "A front-end framework for Laravel",
-        "spatie/data-transfer-object": "Type-safe DTOs when working with external application data",
-        "spatie/enum": "If enumerable values are required",
-        "thenpingme/laravel": "Scheduled task monitoring built specifically for Laravel applications thenping.me"
-    },
-    "config": {
-        "optimize-autoloader": true,
-        "preferred-install": "dist",
-        "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "dont-discover": []
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "App\\": "app/",
-            "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        }
-    },
-    "scripts": {
-        "post-autoload-dump": [
-            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover"
-        ],
-        "post-root-package-install": [
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-        ],
-        "post-create-project-cmd": [
-            "@php artisan key:generate"
-        ],
-        "check-security": "@php artisan enlightn",
-        "cs-fix": "vendor/bin/php-cs-fixer fix",
-        "helpers": [
-            "@php artisan ide-helper:generate",
-            "@php artisan ide-helper:models -N"
-        ],
-        "normalise": "@composer normalize --indent-style space --indent-size 2 --ansi",
-        "rector": "vendor/bin/rector process app --ansi",
-        "stan": "vendor/bin/phpstan analyse",
-        "test": "vendor/bin/pest",
-        "post-update-cmd": [
-            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
-        ]
+  "name": "dyrynda/founder",
+  "description": "Founder is a starter project for your Laravel applications.",
+  "license": "MIT",
+  "type": "project",
+  "keywords": [
+    "laravel",
+    "starter"
+  ],
+  "require": {
+    "php": "^8.0",
+    "fruitcake/laravel-cors": "^2.0.5",
+    "guzzlehttp/guzzle": "^7.2",
+    "honeybadger-io/honeybadger-laravel": "^3.13",
+    "laravel/framework": "^9.0",
+    "laravel/horizon": "^5.8",
+    "laravel/sanctum": "^2.14",
+    "laravel/tinker": "^2.7"
+  },
+  "require-dev": {
+    "barryvdh/laravel-debugbar": "dev-master",
+    "barryvdh/laravel-ide-helper": "^2.12",
+    "brianium/paratest": "^6.4",
+    "composer/composer": "^2.2",
+    "ergebnis/composer-normalize": "^2.6",
+    "fakerphp/faker": "^1.9.1",
+    "friendsofphp/php-cs-fixer": "^3.5",
+    "laravel/sail": "^1.13",
+    "laravel/telescope": "^4.7",
+    "mockery/mockery": "^1.4.4",
+    "nunomaduro/collision": "^6.0",
+    "nunomaduro/larastan": "^1.0",
+    "orchestra/testbench": "^7.9",
+    "pestphp/pest": "^1.21",
+    "pestphp/pest-plugin-laravel": "^1.2",
+    "pestphp/pest-plugin-parallel": "^1.0.0",
+    "phpunit/phpunit": "^9.5.10",
+    "rector/rector": "^0.12",
+    "spatie/laravel-ignition": "^1.0",
+    "spatie/laravel-ray": "^1.29",
+    "wnx/laravel-stats": "^2.8"
+  },
+  "suggest": {
+    "dyrynda/laravel-efficient-uuid": "Efficiently store UUID values in the database",
+    "dyrynda/laravel-make-user": "Quickly create application users with an Artisan command",
+    "dyrynda/laravel-model-uuid": "For applications that need globally-unique model identifiers",
+    "hemp/presenter": "Useful for decorating models when they become bloated with accessor methods",
+    "laracasts/flash": "For displaying flash notifications within applications",
+    "livewire/livewire": "A front-end framework for Laravel",
+    "spatie/data-transfer-object": "Type-safe DTOs when working with external application data",
+    "spatie/enum": "If enumerable values are required",
+    "thenpingme/laravel": "Scheduled task monitoring built specifically for Laravel applications thenping.me"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Database\\Factories\\": "database/factories/",
+      "Database\\Seeders\\": "database/seeders/"
     }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "ergebnis/composer-normalize": true,
+      "pestphp/pest-plugin": true
+    },
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "dont-discover": []
+    }
+  },
+  "scripts": {
+    "post-update-cmd": [
+      "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+    ],
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+      "@php artisan package:discover"
+    ],
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+      "@php artisan key:generate"
+    ],
+    "check-security": "@php artisan enlightn",
+    "cs-fix": "vendor/bin/php-cs-fixer fix",
+    "helpers": [
+      "@php artisan ide-helper:generate",
+      "@php artisan ide-helper:models -N"
+    ],
+    "normalise": "@composer normalize --indent-style space --indent-size 2 --ansi",
+    "rector": "vendor/bin/rector process app --ansi",
+    "stan": "vendor/bin/phpstan analyse",
+    "test": "vendor/bin/pest"
+  }
 }
