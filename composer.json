@@ -92,7 +92,6 @@
     "post-create-project-cmd": [
       "@php artisan key:generate"
     ],
-    "check-security": "@php artisan enlightn",
     "cs-fix": "vendor/bin/php-cs-fixer fix",
     "helpers": [
       "@php artisan ide-helper:generate",
