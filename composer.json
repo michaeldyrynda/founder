@@ -10,37 +10,37 @@
     "require": {
         "php": "^8.0",
         "enlightn/enlightn": "^1.22",
-        "fideloper/proxy": "^4.4",
-        "fruitcake/laravel-cors": "^2.0",
+        "fruitcake/laravel-cors": "^2.0.5",
         "guzzlehttp/guzzle": "^7.2",
-        "honeybadger-io/honeybadger-laravel": "^3.10",
-        "laravel/framework": "^8.62",
-        "laravel/horizon": "^5.6",
-        "laravel/tinker": "^2.5"
+        "honeybadger-io/honeybadger-laravel": "^3.13",
+        "laravel/framework": "^9.0",
+        "laravel/horizon": "^5.8",
+        "laravel/tinker": "^2.7",
+        "laravel/sanctum": "^2.14"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "^3.5",
-        "barryvdh/laravel-ide-helper": "^2.10",
+        "barryvdh/laravel-debugbar": "dev-master",
+        "barryvdh/laravel-ide-helper": "^2.12",
         "beyondcode/laravel-dump-server": "^1.7",
-        "brianium/paratest": "^6.2",
-        "composer/composer": "2.1.x-dev",
+        "brianium/paratest": "^6.4",
+        "composer/composer": "^2.2",
         "ergebnis/composer-normalize": "^2.6",
-        "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
-        "friendsofphp/php-cs-fixer": "^3.0",
-        "laravel/sail": "^1.0.1",
-        "laravel/telescope": "^4.4",
-        "mockery/mockery": "^1.4.2",
-        "nunomaduro/collision": "^5.3",
-        "nunomaduro/larastan": "^0.7.6",
-        "orchestra/testbench": "^6.15",
-        "pestphp/pest": "^1.20",
-        "pestphp/pest-plugin-laravel": "^1.1",
+        "friendsofphp/php-cs-fixer": "^3.5",
+        "laravel/sail": "^1.13",
+        "laravel/telescope": "^4.7",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^6.0",
+        "nunomaduro/larastan": "^1.0",
+        "orchestra/testbench": "dev-remove-nice-to-have-deps",
+        "pestphp/pest": "^1.21",
+        "pestphp/pest-plugin-laravel": "^1.2",
         "pestphp/pest-plugin-parallel": "^1.0.0",
-        "phpunit/phpunit": "^9.5",
-        "rector/rector": "^0.11.5",
-        "spatie/laravel-ray": "^1.17",
-        "wnx/laravel-stats": "^2.5"
+        "phpunit/phpunit": "^9.5.10",
+        "rector/rector": "^0.12",
+        "spatie/laravel-ray": "^1.29",
+        "wnx/laravel-stats": "^2.8",
+        "spatie/laravel-ignition": "^1.0"
     },
     "suggest": {
         "dyrynda/laravel-efficient-uuid": "Efficiently store UUID values in the database",
@@ -95,6 +95,9 @@
         "normalise": "@composer normalize --indent-style space --indent-size 2 --ansi",
         "rector": "vendor/bin/rector process app --ansi",
         "stan": "vendor/bin/phpstan analyse",
-        "test": "vendor/bin/pest"
+        "test": "vendor/bin/pest",
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+        ]
     }
 }
