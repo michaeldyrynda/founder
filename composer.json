@@ -9,10 +9,9 @@
   ],
   "require": {
     "php": "^8.0",
-    "fruitcake/laravel-cors": "^2.0.5",
     "guzzlehttp/guzzle": "^7.2",
     "honeybadger-io/honeybadger-laravel": "^3.13",
-    "laravel/framework": "^9.0",
+    "laravel/framework": "^9.2",
     "laravel/tinker": "^2.7"
   },
   "require-dev": {
