@@ -47,6 +47,7 @@
     "thenpingme/laravel": "Scheduled task monitoring built specifically for Laravel applications thenping.me"
   },
   "minimum-stability": "dev",
+  "prefer-stable": true,
   "autoload": {
     "psr-4": {
       "App\\": "app/",
