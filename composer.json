@@ -29,7 +29,6 @@
     "pestphp/pest": "^1.21",
     "pestphp/pest-plugin-laravel": "^1.2",
     "pestphp/pest-plugin-parallel": "^1.0.0",
-    "phpunit/phpunit": "^9.5.10",
     "rector/rector": "^0.12",
     "spatie/laravel-ignition": "^1.0",
     "spatie/laravel-ray": "^1.29",
