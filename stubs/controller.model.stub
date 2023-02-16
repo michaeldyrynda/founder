@@ -4,41 +4,43 @@ namespace {{ namespace }};
 
 use {{ namespacedModel }};
 use {{ rootNamespace }}Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use {{ namespacedRequests }}
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Response;
 
 class {{ class }} extends Controller
 {
-    public function index()
+    public function index(): Response
     {
         //
     }
 
-    public function create()
+    public function create(): Response
     {
         //
     }
 
-    public function store(Request $request)
+    public function store({{ storeRequest }} $request): RedirectResponse
     {
         //
     }
 
-    public function show({{ model }} ${{ modelVariable }})
+    public function show({{ model }} ${{ modelVariable }}): Response
     {
         //
     }
 
-    public function edit({{ model }} ${{ modelVariable }})
+    public function edit({{ model }} ${{ modelVariable }}): Response
     {
         //
     }
 
-    public function update(Request $request, {{ model }} ${{ modelVariable }})
+    public function update({{ updateRequest }} $request, {{ model }} ${{ modelVariable }}): RedirectResponse
     {
         //
     }
 
-    public function destroy({{ model }} ${{ modelVariable }})
+    public function destroy({{ model }} ${{ modelVariable }}): RedirectResponse
     {
         //
     }

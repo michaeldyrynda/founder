@@ -3,41 +3,43 @@
 namespace {{ namespace }};
 
 use {{ rootNamespace }}Http\Controllers\Controller;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class {{ class }} extends Controller
 {
-    public function index()
+    public function index(): Response
     {
         //
     }
 
-    public function create()
+    public function create(): Response
     {
         //
     }
 
-    public function store(Request $request)
+    public function store(Request $request): RedirectResponse
     {
         //
     }
 
-    public function show($id)
+    public function show(string $id): Response
     {
         //
     }
 
-    public function edit($id)
+    public function edit(string $id): Response
     {
         //
     }
 
-    public function update(Request $request, $id)
+    public function update(Request $request, string $id): RedirectResponse
     {
         //
     }
 
-    public function destroy($id)
+    public function destroy(string $id): RedirectResponse
     {
         //
     }
