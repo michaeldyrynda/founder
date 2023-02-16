@@ -1,0 +1,41 @@
+<?php
+
+namespace {{ namespace }};
+
+use {{ rootNamespace }}Http\Controllers\Controller;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+
+class {{ class }} extends Controller
+{
+    public function create(): never
+    {
+        abort(404);
+    }
+
+    public function store(Request $request): never
+    {
+        abort(404);
+    }
+
+    public function show(): Response
+    {
+        //
+    }
+
+    public function edit(): Response
+    {
+        //
+    }
+
+    public function update(Request $request): RedirectResponse
+    {
+        //
+    }
+
+    public function destroy(): never
+    {
+        abort(404);
+    }
+}

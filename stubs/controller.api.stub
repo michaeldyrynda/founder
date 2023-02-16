@@ -4,30 +4,31 @@ namespace {{ namespace }};
 
 use {{ rootNamespace }}Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class {{ class }} extends Controller
 {
-    public function index()
+    public function index(): Response
     {
         //
     }
 
-    public function store(Request $request)
+    public function store(Request $request): Response
     {
         //
     }
 
-    public function show($id)
+    public function show(string $id): Response
     {
         //
     }
 
-    public function update(Request $request, $id)
+    public function update(Request $request, string $id): Response
     {
         //
     }
 
-    public function destroy($id)
+    public function destroy(string $id): Response
     {
         //
     }

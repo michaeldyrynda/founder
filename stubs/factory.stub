@@ -3,13 +3,16 @@
 namespace {{ factoryNamespace }};
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use {{ namespacedModel }};
 
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\{{ namespacedModel }}>
+ */
 class {{ factory }}Factory extends Factory
 {
-    protected $model = {{ model }}::class;
-
-    public function definition()
+    /**
+     * @return array<string, mixed>
+     */
+    public function definition(): array
     {
         return [
             //

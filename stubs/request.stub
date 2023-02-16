@@ -6,12 +6,15 @@ use Illuminate\Foundation\Http\FormRequest;
 
 class {{ class }} extends FormRequest
 {
-    public function authorize()
+    public function authorize(): bool
     {
         return false;
     }
 
-    public function rules()
+    /**
+     * @return array<string, \Illuminate\Contracts\Validation\Rule|array|string>
+     */
+    public function rules(): array
     {
         return [
             //

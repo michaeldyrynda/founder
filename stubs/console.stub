@@ -6,17 +6,18 @@ use Illuminate\Console\Command;
 
 class {{ class }} extends Command
 {
+    /**
+     * @var string
+     */
     protected $signature = '{{ command }}';
 
+    /**
+     * @var string
+     */
     protected $description = 'Command description';
 
-    public function __construct()
+    public function handle(): void
     {
-        parent::__construct();
-    }
-
-    public function handle()
-    {
-        return 0;
+        //
     }
 }
